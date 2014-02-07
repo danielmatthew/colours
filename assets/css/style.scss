@@ -1,0 +1,88 @@
+@import "bourbon";
+
+html {
+  height: 100%;
+}
+
+body {
+	background-color: white;
+	font-family: "Helvetica Neue";
+}
+
+
+h1 {
+	@include animation(colourChange 10s infinite);
+	font-size: 10em;
+	color: transparent;
+	background-color: red;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-box-reflect: below;
+	text-align: center;
+	margin: 1em auto;
+}
+
+@include keyframes(colourChange) {
+	0% {
+		background-color: red;
+	}
+
+	14% {
+		background-color: orange;
+	}
+
+	28% {
+		background-color: yellow;
+	}
+
+	42% {
+		background-color: green;
+	}
+
+	56% {
+		background-color: blue;
+	}
+
+	70% {
+		background-color: indigo;
+	}
+
+	84% {
+		background-color: violet;
+	}
+
+	100% {
+		background-color: red;
+	}
+}
+
+
+@keyframes colourChange {
+	0% {
+		background-color: red;
+	}
+
+	14% {
+		background-color: orange;
+	}
+
+	28% {
+		background-color: yellow;
+	}
+
+	42% {
+		background-color: green;
+	}
+
+	56% {
+		background-color: blue;
+	}
+
+	70% {
+		background-color: indigo;
+	}
+
+	84% {
+		background-color: violet;
+	}
+}
