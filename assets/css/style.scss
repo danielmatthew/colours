@@ -19,7 +19,7 @@ h1 {
 	-webkit-text-fill-color: transparent;
 	-webkit-box-reflect: below;
 	text-align: center;
-	margin: 1em auto;
+	margin: 0 auto;
 }
 
 @include keyframes(colourChange) {
